@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <title style="color: brown">Responsive Login and Signup Form</title>
+  <meta name="author" content="Zaur">
+  <meta descryption content="Presentation of website">
+  <meta name="keywords" content="technology, cyber security, software">
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <form id="signup-form">
+      <div class="form-group">
+        <label>First Name:</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div class="form-group">
+        <label>Last Name:</label>
+        <input type="text" id="last-name" required>
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label>DOB:</label>
+        <input type="date" id="dob" placeholder="mm/dd/yyyy" required>
+        <span class="error-message" id="dob-error"></span>
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" required>
+        <span class="error-message" id="password-error"></span>
+      </div>
+      <div class="form-group">
+        <label>Confirm Password:</label>
+        <input type="password" id="confirm-password" required>
+        <span class="error-message" id="confirm-password-error"></span>
+      </div>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+  <div class="success-message" id="success-message"></div>
+</body>
+<script src="Login.js"></script>
+</html>
